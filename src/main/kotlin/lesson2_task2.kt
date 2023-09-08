@@ -8,7 +8,9 @@ fun main() {
     val newbeesCost = countOfNewbee * newbeesSalary
     val totalSalary = workersCost + newbeesCost
     val averageSalaryForWorker = totalSalary / (countOfWorker + countOfNewbee)
-    println("Расход на постоянных сотрудников составил: $workersCost")
+
+        println("Расход на постоянных сотрудников составил: $workersCost")
+
     println("Расход на стажёров составил: $newbeesCost")
     println("Средняя оплата сотрудника после устройста стажёров составила: $averageSalaryForWorker")
 }
