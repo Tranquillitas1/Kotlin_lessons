@@ -1,16 +1,9 @@
 fun main() {
     var timeInSpaceBySeconds = 6480
-    val timeInSpaceHours = 1
-    val timeInSpaceMinutes = 48
+    val timeInSpaceByHourse = ((timeInSpaceBySeconds / 60) / 60)
+    val timeInSpaceByMinutes = (timeInSpaceBySeconds - (timeInSpaceByHourse * 60 * 60)) / 60
+    timeInSpaceBySeconds = timeInSpaceBySeconds - (((timeInSpaceByHourse * 60) + timeInSpaceByMinutes) * 60)
 
-    timeInSpaceBySeconds = 0
-
-    print("0")
-    print(timeInSpaceHours)
-    print(":")
-    print(timeInSpaceMinutes)
-    print(":")
-    print(timeInSpaceBySeconds)
-    print("0")
+    print("$timeInSpaceByHourse:$timeInSpaceByMinutes:$timeInSpaceBySeconds"+0)
 
 }
