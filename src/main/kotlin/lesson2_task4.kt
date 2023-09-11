@@ -10,6 +10,4 @@ fun main(){
     val ironWithBuff = iron * buffValue
     println(cristalWithBuff.toInt())
     println(ironWithBuff.toInt())
-
-
 }
